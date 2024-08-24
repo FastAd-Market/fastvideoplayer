@@ -1,7 +1,7 @@
 name: fastvideoplayer
 description: This is an intuitive video player with precache support for FastAd. It reduces the boilerplate code required to use a video player.
 publish_to: 'none'
-version: 1.0.0
+version: 1.0.1
 
 environment:
   sdk: '>=3.0.0 <4.0.0'

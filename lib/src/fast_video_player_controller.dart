@@ -170,7 +170,9 @@ class FastVideoPlayerController extends VideoPlayerController {
   Future<void> dispose() {
     _downloadStream?.cancel();
     _downloadStream = null;
-    _completer.complete(null);
+    if (!_completer.isCompleted) {
+      _completer.complete(null);
+    }
     isReady.dispose();
     cacheProgressNotifier.dispose();
     playerControlsVisibilityNotifier.dispose();

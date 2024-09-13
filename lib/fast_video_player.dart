@@ -9,6 +9,7 @@ import 'src/fast_video_player_strings.dart';
 export 'src/fast_video_player_controls.dart';
 export 'src/fast_video_player_strings.dart';
 export 'src/fast_video_player_controller.dart';
+export 'package:video_player/video_player.dart' show VideoPlayerValue;
 
 class FastVideoPlayer extends HookWidget {
   final FastVideoPlayerController controller;
